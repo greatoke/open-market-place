@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ArrowRight, ShoppingBag, Shield, Users } from "lucide-react";
+import prisma from "@/lib/prisma";
 
-export default function Home() {
+export default async function Home() {
+  const products = await prisma.product.findMany();
+  console.log(products);
   return (
     <div className="flex flex-col min-h-screen">
       <header className="border-b">
