@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Open Marketplace
+
+A full-stack eCommerce web application built with modern technologies.
+
+## Features
+
+- **Authentication**: Auth.js with Google, Apple, Facebook, and Credentials provider
+- **Database**: SQLite with Prisma ORM
+- **Styling**: Tailwind CSS with ShadCN UI components
+- **Roles**: Admin, Seller, and Buyer with Role-Based Access Control
 
 ## Getting Started
 
-First, run the development server:
-
+1. Install dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Run the development server:
+```bash
+pnpm dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+### Roles & Access
 
-To learn more about Next.js, take a look at the following resources:
+- **Admin**: 
+  - Manage users, products, and orders
+  - Access to analytics dashboard
+- **Seller**:
+  - Product CRUD operations
+  - Sales dashboard
+- **Buyer**:
+  - Browse products
+  - Authenticated checkout
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Technical Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Frontend**: Next.js with Tailwind CSS
+- **Backend**: Next.js API routes
+- **Database**: SQLite with Prisma
+- **Authentication**: Auth.js
+- **Testing**: Jest & Playwright
 
-## Deploy on Vercel
+## Development
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+We follow Agile methodology with CI/CD using GitHub Actions.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Key Principles
+
+- DRY (Don't Repeat Yourself)
+- KISS (Keep It Simple)
+- SOLID Principles
+- Atomic Design for UI components
+
+## API Endpoints
+
+- Authentication (OAuth + credentials)
+- Product listing
+- User management
+- Checkout (mock payment)
+
+## Contributing
+
+We welcome contributions! Please follow our coding standards and create a pull request.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+# open-market-place
